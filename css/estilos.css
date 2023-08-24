@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* estilos globales */
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+.body-carta-menu{
+    text-align: center;
+}
+
+
+.body-reservas{
+    
+    
+    background-color: black;
+    margin: 0;
+}
+
+.bg-red{
+    background-color: rgb(218, 10, 10);
+}
+
+h1{ font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h2{ 
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+h3{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home-encabezado{
+    color: red;
+    font-size: 2.2rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.gran-recoleta-sub{
+    color: rgb(236, 87, 87);
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.1rem;
+    
+}
+
+.menu-encabezado{
+    color: red;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+}
+
+hr{
+    height: 1px;
+}
+
+
+.galeria-encabezado{
+    color: red;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 2rem;
+    
+}
+
+
+.sucursales-encabezado{
+    font-size: 2rem;
+    font-style: italic;
+    color: red;
+}
+
+
+
+p{
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+.granrecoleta-home{
+ display: flex;
+ justify-content: center;
+}
+
+
+.navbar-brand{
+    font-size: 1.5rem;
+    
+}
+
+
+
+
+
+/* estilos de main */ 
+
+.main-home{
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 2rem;
+    margin: 1rem 2rem 3rem 2rem;
+    align-content: center;
+
+}
+
+.main-home .imagen-home-dos, .imagen-home-cinco{
+
+    display: none;
+}
+
+
+.main-home div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.main-menu .menu-postres{
+    margin-bottom: 5.6rem;
+}
+
+
+.main-galeria{
+    margin-top: 8rem;
+
+}
+
+
+.main-galeria .carousel-item img{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.formulario-reservas{
+    width: 25rem;
+    height: 36rem;
+    margin: auto;
+    background-color: rgb(228, 60, 60);
+    padding: 0.7rem 1.4rem;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+    margin-top: 2.5rem;
+    margin-bottom: 5.6rem;
+    border-radius: 1.5rem;
+    
+}
+    
+
+.contacto{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+}
+
+.input-reservas, .mensaje-reservas, .boton-enviar{
+    width: 100%;
+    margin-bottom: 0.3rem;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    
+}
+
+.mensaje-reservas{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+.boton-enviar{
+    background-color: #31384a;
+    color: whitesmoke;
+    padding: 0.5rem;
+
+}
+
+
+.boton-enviar:hover{
+    cursor: pointer;
+}
+
+
+.main-sucursales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    margin-bottom: 5.6rem;
+
+}
+
+
+
+.sucursal-uno, .sucursal-dos, .sucursal-tres, .sucursal-cuatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24rem;
+    height: 11rem;
+    border: solid 2px whitesmoke;
+    border-radius: 2rem;
+    background-color: black;
+    margin: 4rem 1rem 2rem 1rem;
+
+}
+
+.main-sucursales div article h2{
+    text-align: center;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.main-sucursales div article p{
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+
+}
+
+
+
+
+
+/* estilos de footer */
+
+.footer-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+
+}
+
+
+.footer-home .cont-redes .redes a, .img-footer{
+    
+    width: 2.5rem;
+    height: 2.5rem;
+    
+}
+
+
+.footer-home .cont-redes .redes, .redes-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    list-style: none;
+    gap: 1.5rem;
+    
+}
+
+
+.cont-redes, .redes{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    padding: 1rem;
+    z-index: 2;
+ 
+}
+
+
+
+
+
+
+
+
+/* mq desktop */  
+
+@media screen and (min-width:1024px){
+
+
+
+
+.home-encabezado{
+     font-size: 3rem;
+}
+
+.gran-recoleta-sub{
+ font-size: 1.1rem;
+}
+
+.galeria-encabezado{
+  
+    font-size: 1.1rem;
+    
+}
+
+.sucursales-encabezado{
+    font-size: 2.5rem;
+
+}
+
+
+
+/* estilos de main */ 
+
+
+
+.main-home .imagen-home-dos{
+
+    display: block;
+}
+
+.main-home{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50% 50%;
+    align-content: center;
+
+}
+
+
+.main-home .imagen-home-uno, .imagen-home-tres{
+    grid-row: span 2;
+}
+
+.main-home .imagen-home-dos, .main-home .imagen-home-cuatro{
+    grid-column: span 1;
+}
+
+
+.main-home .imagen-home-cinco{
+    grid-column: span 3;
+}
+
+.main-galeria{
+    height: 60vh;
+    margin-top: 2rem;
+}
+
+
+.carousel{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+
+.main-reservas .formulario-reservas input, label{
+    display: block;
+}
+
+
+.main-reservas .formulario-reservas .boton-restablecer{
+    display: inline;
+}
+
+
+.main-reservas .formulario-reservas .boton-enviar{
+    display: inline;
+}
+
+
+
+.formulario-reservas{
+    width: 35rem;
+}
+
+
+
+
+.sucursal-uno, .sucursal-dos, .sucursal-tres, .sucursal-cuatro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 11rem;
+    border: solid 2px whitesmoke;
+    border-radius: 2rem;
+    background-color: black;
+    margin: 4rem 1rem 2rem 1rem;
+}
+
+}
